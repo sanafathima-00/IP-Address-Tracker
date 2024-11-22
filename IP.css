@@ -1,0 +1,119 @@
+/* General reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Top section styling */
+.top-section {
+    background: url('Top_bg.png') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0; /* Ensure no margin below top-section */
+}
+
+.content {
+    text-align: center;
+    color: white;
+    margin-top: -75px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.search {
+    background-color: white;
+    width: 620px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Add black border when the search box is focused */
+.search:focus-within {
+    border: 2px solid black;
+}
+
+.search-input {
+    flex: 1;
+    font-size: 0.85rem;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search-icon {
+    width: 45px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #000000;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Info container styling */
+.info-container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: -50px auto; /* Remove the top: -50px and center the container */
+    z-index: 1; /* Ensure it stays above the map */
+}
+
+.info-item {
+    text-align: center;
+    flex: 1;
+    padding: 0 10px;
+    border-right: 1px solid #E0E0E0;
+}
+
+.info-item:last-child {
+    border-right: none;
+}
+
+.info-label {
+    font-size: 0.8rem;
+    color: grey;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.info-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+/* Map container styling */
+#map {
+    height: 100vh; /* Take up full viewport height */
+    width: 100%;
+    margin-top: 0; /* Ensure no space above the map */
+    z-index: 0;
+}
