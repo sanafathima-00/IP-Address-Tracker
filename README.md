@@ -53,9 +53,10 @@ cd ip-address-tracker
 
 ```
 ip-address-tracker/
-├── index.html
-├── style.css
-├── script.js
+├── IP.html
+├── IP.css
+├── IP.js
+├── Top_bg.png
 └── README.md
 ```
 
