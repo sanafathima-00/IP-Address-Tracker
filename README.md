@@ -1,6 +1,6 @@
-### README for **IP Address Tracker**
+# **IP Address Tracker**
 
----
+
 
 ## 🌍 Project Overview
 
@@ -110,5 +110,3 @@ This project is open-source under the **MIT License**.
 * [Leaflet.js](https://leafletjs.com/) for the powerful mapping library
 * [ipgeolocation.io](https://ipgeolocation.io/) or similar APIs
 * Inspired by Frontend Mentor's IP Tracker Challenge
-
-```
